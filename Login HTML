@@ -1,0 +1,20 @@
+<body>
+
+    <form (ngSubmit)="login()">
+        <h1>INICIAR SESION</h1>
+        
+        <img src="./assets/usuario.jpg" width="130" alt="">
+        
+        <label for="usuario">Usuario</label>
+        <input type="text" [(ngModel)]="username" name="username"  placeholder="Usuario" required>
+        
+        <label for="contraseña">Contraseña</label>
+        <input type="password" [(ngModel)]="password" name="password" placeholder="contraseña" required>
+        
+        
+       <button type="submit">Iniciar Sesion</button>
+
+    
+    </form>
+
+</body>
